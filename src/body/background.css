@@ -1,0 +1,15 @@
+.banniere {
+    background-image: url('../img/banniere.png');
+    position: absolute;
+width: 1240px;
+height: 223px;
+left: 100px;
+top: 171px;
+
+background: #000000;
+mix-blend-mode: darken;
+opacity: 0.3;
+border-radius: 25px;
+}
+
+
