@@ -14,19 +14,24 @@ function App() {
       return location.id
     }))
   return (
-    <div className="App">
-      <header className="header">
-        <img src={logo_kasa} alt="" /> 
-        <Navbar />
-      </header>
-      <main>
-        <Banniere />
-        <Location />
-      </main>
-      <footer> 
+    <div className="Page-container">
+      <div className="content-wrap">
+        <div className="App">
+          <header className="header">
+            <img src={logo_kasa} alt="" /> 
+            <Navbar />
+          </header>
+          <main>
+            <Banniere />
+            <Location />
+          </main>
+          <footer> 
+           
+          </footer>
+        </div>
+      </div>
         <img src={logo_kasa_footer} alt=""/>
         <Footer />
-      </footer>
     </div>
   );
 }
