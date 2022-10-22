@@ -8,7 +8,7 @@ export default function footer() {
         <div className="container">
                 <img src={image} />
         <p className="footer_text">
-        © 202 Kasa. All rights reserverd
+        © 2020 Kasa. All rights reserverd
         </p>
         </div>
     </div>

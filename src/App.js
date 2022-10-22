@@ -10,9 +10,7 @@ import Footer from './footer/footer'
 
 function App() {
     console.log(locations)
-    console.log(locations.map ((location) => {
-      return location.id
-    }))
+
   return (
     <div className="Page-container">
       <div className="content-wrap">
@@ -23,7 +21,9 @@ function App() {
           </header>
           <main>
             <Banniere />
-            <Location />
+         
+              <Location />
+            
           </main>
           <footer> 
            

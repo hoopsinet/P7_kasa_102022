@@ -5,10 +5,13 @@ export default function location() {
     return locations.map ((location) => {
         return (
             <div>
-            <h2>{ Location.title }</h2>
-            <p>{ Location.description }</p>
+            <h2>{ location.title }</h2>
+            <p> { location.description }</p>
             </div>
-    
+           
         )
 
         })}
+
+// const location = this.locations.map((location) =>  <h2>{locations.title</h2>}
+    
