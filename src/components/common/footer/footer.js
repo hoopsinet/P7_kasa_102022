@@ -1,17 +1,21 @@
 import "./footer.css"
+import k from '../../../../src/img/k.png';
+import home from '../../../../src/img/home.png';
+import s from '../../../../src/img/s.png';
+import a from '../../../../src/img/a.png';
 
 export default function footer() {
-    const image = require("../img/logo_kasa_footer.png").default;
-
     return (
     <div className="main_footer">
-        <div className="container">
-                <img src={image} />
+        <div className="logo_footer">
+            <img src={k} alt="lettre k logo" />
+            <img src={home} alt="lettre home logo" />
+            <img src={s} alt="lettre s logo" />
+            <img src={a} alt="lettre a logo" />
+        </div>
         <p className="footer_text">
         © 2020 Kasa. All rights reserverd
         </p>
-        </div>
     </div>
     );
   }
-
