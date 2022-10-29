@@ -1,17 +1,15 @@
 import React from 'react';
 import './App.css';
-import Navbar from './header/navbar';
+import Navbar from './components/header/navbar';
 import logo_kasa from '../src/img/logo_kasa.png';
 import logo_kasa_footer from '../src/img/logo_kasa_footer.png';
-import Banniere from './body/background';
+import Banniere from './home/background';
 import locations from './data.json';
-import Location from './body/location';
-import Footer from './footer/footer'
+import Location from './home/location';
+// import Footer from '.src/components/common/footer';
 
 function App() {
-    console.log(locations)
-
-  return (
+     return(
     <div className="Page-container">
       <div className="content-wrap">
         <div className="App">
@@ -21,17 +19,12 @@ function App() {
           </header>
           <main>
             <Banniere />
-         
-              <Location />
-            
+            <Location details={locations} />
           </main>
-          <footer> 
-           
-          </footer>
         </div>
       </div>
         <img src={logo_kasa_footer} alt=""/>
-        <Footer />
+        {/* <Footer /> */}
     </div>
   );
 }

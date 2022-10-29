@@ -1,8 +1,8 @@
 import "./location.css"
-import locations from '../data.json';
 
-export default function location() {
-    return locations.map ((location) => {
+export default function location(props) {
+    console.log(props)
+    return props.details.map ((location) => {
         return (
             <div>
             <h2>{ location.title }</h2>
