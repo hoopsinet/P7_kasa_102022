@@ -1,6 +1,6 @@
-import react, {useState, useEffect} from 'react'
+import React from 'react'
 import "./background.css"
-import banniere_background from '../img/banniere.png';
+import banniere_background from '../../img/banniere.png'
 
 export default function banniere() {
     return (

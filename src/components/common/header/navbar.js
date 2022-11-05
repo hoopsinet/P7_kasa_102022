@@ -1,6 +1,6 @@
-import react, {useState, useEffect} from 'react'
 import "./navbar.css"
 import Logo from "./logo";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     return (
@@ -8,10 +8,10 @@ export default function Navbar() {
             <Logo />
             <ul className="liste">
                 <li className="items">
-                    <a href="">Accueil</a>
+                    <Link to="/">Accueil</Link>
                 </li>
                 <li className="items">
-                    <a href="">A propos</a>
+                    <Link to="/apropos">A propos</Link>
                 </li>
             </ul>
         </nav>
