@@ -1,0 +1,44 @@
+.locationInfo {
+    text-align : left;
+    color : #fe6262;
+}
+
+.locationTags, details>summary {
+    border-radius : 10px;
+    background-color : #fe6262;
+    color : white;
+}
+
+.Box {
+    display : flex;
+    justify-content: space-between;
+}
+
+.Box details {
+    width : 45%;
+}
+
+details>summary {
+    height :40px;
+    text-align : left;
+    line-height : 40px;
+}
+
+details {
+    background: #F7F7F7;
+    border-radius: 10px;
+}
+
+.hostPicture {
+    border-radius : 50%;
+}
+
+.hostInfo {
+    display : flex;
+    color : #fe6262;
+}
+
+.location, .locationMoreInfo {
+    display : flex;
+    justify-content : space-between;
+}
