@@ -3,8 +3,8 @@ import Header from '../components/common/header/header';
 import Footer from '../components/common/footer/footer';
 import './products.css';
 import { useParams, useNavigate } from 'react-router-dom';
-
 import Locations from "../data.json";
+import Slider from "../components/slider/slider"
 
 const Product = () => {
     const params = useParams();
@@ -26,8 +26,8 @@ const Product = () => {
                 <div className="">
                   <Header />
               
-                  <div className="Diapo">
-                    <img src={ location.pictures } alt="location pictures" />
+                  <div className="diapo" >
+                    <Slider slides={location.pictures}/>
                   </div>
 
                   <div className='location'>

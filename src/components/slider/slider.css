@@ -1,0 +1,12 @@
+.sliderBoxStyle {
+    height : 100%;
+    position : relative;
+}
+
+.slider {
+    width : 100%;
+    height : 100%;
+    border-radius : 25px;
+    background-position :center;
+    background-size: cover;
+}

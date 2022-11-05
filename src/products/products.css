@@ -42,3 +42,10 @@ details {
     display : flex;
     justify-content : space-between;
 }
+
+
+.diapo {
+    width : 500px;
+    height : 280px;
+    margin : 0 auto;
+  }
