@@ -49,13 +49,15 @@ const Product = () => {
                   </div>
 
                   <div className="Box">
-                    <details className="description">
+                    <details> className="description">
                       <summary>Description</summary>
-                        {location.description}
+                      <div>
+                      {location.description}
+                      </div>
                     </details>
                     <details className="equipements">
                       <summary>Equipements</summary>
-                        {location.equipments}
+                        {location.equipments.map(equipment => <li>{equipment}</li>)}
                     </details>
                   </div>
           
