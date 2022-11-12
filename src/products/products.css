@@ -43,9 +43,27 @@ details {
     justify-content : space-between;
 }
 
-
 .diapo {
-    width : 500px;
-    height : 280px;
+    width : 100%;
+    height : 415px;
     margin : 0 auto;
+    display : flex;
+  }
+
+.left-arrow {
+    position : absolute;
+    top : 50%;
+    left : 3%;
+    z-index : 10;
+    cursor : pointer;
+    user-select : none;
+}
+
+.right-arrow {
+    position : absolute;
+    top : 50%;
+    right : 3%;
+    z-index : 10;
+    cursor : pointer;
+    user-select : none;
   }

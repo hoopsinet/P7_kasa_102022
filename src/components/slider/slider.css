@@ -1,6 +1,8 @@
-.sliderBoxStyle {
+.boxStyle {
     height : 100%;
+    width : 100%;
     position : relative;
+
 }
 
 .slider {
@@ -11,6 +13,32 @@
     background-size: cover;
 }
 
-.boxStyle {
-    height: 80%
+
+button {
+    height : 25%;
+    background: none;
+    border : none;
 }
+
+button img {
+    max-height : 100%;
+}
+
+.leftBtn {
+   position : absolute;
+   top : 38%;
+   left : 3%;
+}
+
+.rightBtn {
+    position : absolute;
+    top : 38%;
+    right : 3%;
+ }
+
+ .pictureNbr {
+    color : white;
+    position : absolute;
+    left : 50%;
+    bottom : 7%;
+ }

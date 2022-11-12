@@ -3,10 +3,12 @@ import Header from '../components/common/header/header';
 import Footer from '../components/common/footer/footer';
 import './products.css';
 import { useParams, useNavigate } from 'react-router-dom';
+import Slider from '../components/slider/slider'
+
 import Locations from "../data.json";
-import Slider from "../components/slider/slider"
 
 const Product = () => {
+
     const params = useParams();
     const navigation = useNavigate();
 
@@ -16,13 +18,15 @@ const Product = () => {
          navigation("/error");
       }
     });
-      
-    return (
+    
+     return (
 
       <div className="">
         <div className="">
             {Locations.filter((location) => location.id === params.id).map(
               (location) => (
+
+
                 <div className="">
                   <Header />
               
@@ -49,15 +53,13 @@ const Product = () => {
                   </div>
 
                   <div className="Box">
-                    <details> className="description">
+                    <details className="description">
                       <summary>Description</summary>
-                      <div>
-                      {location.description}
-                      </div>
+                        {location.description}
                     </details>
                     <details className="equipements">
                       <summary>Equipements</summary>
-                        {location.equipments.map(equipment => <li>{equipment}</li>)}
+                        {location.equipments}
                     </details>
                   </div>
           
