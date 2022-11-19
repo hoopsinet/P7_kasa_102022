@@ -3,7 +3,8 @@ import Header from '../components/common/header/header';
 import Footer from '../components/common/footer/footer';
 import './products.css';
 import { useParams, useNavigate } from 'react-router-dom';
-import Slider from '../components/slider/slider'
+import Slider from '../components/slider/slider';
+import Rating from '../components/rating/rating';
 
 import Locations from "../data.json";
 
@@ -49,7 +50,7 @@ const Product = () => {
 
                   <div className='locationMoreInfo'> 
                     <p className='locationTags'>{location.tags}</p>
-                    <p>{location.rating}</p>
+                    <Rating rate={location.rating} />
                   </div>
 
                   <div className="Box">
@@ -59,7 +60,10 @@ const Product = () => {
                     </details>
                     <details className="equipements">
                       <summary>Equipements</summary>
-                        {location.equipments}
+                      <ul>
+                        {/* <li>  { location.equipments.map ( e =>  )} </li> */}
+                      </ul>
+                       
                     </details>
                   </div>
           
@@ -72,3 +76,5 @@ const Product = () => {
   }
 
 export default Product;
+
+// Mettre une div pour le background >> descriptions et equipements
