@@ -4,6 +4,7 @@ import './App.css';
 import Home from "././home/index";
 import About from "./about/about"
 import Product from "./products/products";
+import Error from "./error/error"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products/:id" element={<Product />} />
         <Route path="/about" element={<About />} />
+        <Route path="/*" element={<Error />} />
 
       </Routes>
     </div>
