@@ -1,0 +1,26 @@
+.aboutContent {
+    width : 80%;
+    margin : auto;
+    
+}
+
+details {
+    margin : 25px 0;
+    border-radius : 5px;
+}
+
+summary {
+    border-radius : 5px;
+}
+
+details>p {
+    text-align: left;
+    color : #fe6262;
+    padding : 20px 15px;
+    line-height: 25.67px;
+}
+
+
+@media all and (max-width:630px) {
+
+}

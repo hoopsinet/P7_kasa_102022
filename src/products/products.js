@@ -42,26 +42,35 @@ const Product = () => {
                     </div>
 
                     <div className='hostInfo'>
-                      <p>{location.host.name}</p>
+                      <p className='hostName'>{location.host.name}</p>
                       <img src={ location.host.picture } alt="hostPicture" className="hostPicture" />
                     </div> 
                   </div>
                   
 
                   <div className='locationMoreInfo'> 
-                    <p className='locationTags'>{location.tags}</p>
-                    <Rating rate={location.rating} />
+                    <div className='locationTags'>
+                     {
+                        location.tags.map(tag => <p className='locationTag'>{tag}</p>)
+                      }
+                    </div>
+                    <div className='rating'>
+                      <Rating rate={location.rating} />
+                    </div>
                   </div>
 
                   <div className="Box">
                     <details className="description">
                       <summary>Description</summary>
-                        {location.description}
+                        <p className='fullDescription'>{location.description}</p>
                     </details>
                     <details className="equipements">
                       <summary>Equipements</summary>
-                      <ul>
-                        {/* <li>  { location.equipments.map ( e =>  )} </li> */}
+                      <ul className='equipmentList'>
+                      {
+                        location.equipments.map(equipment => <li className='item'>{equipment}</li>)
+                      }
+                       
                       </ul>
                        
                     </details>

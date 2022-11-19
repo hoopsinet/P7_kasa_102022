@@ -1,0 +1,20 @@
+.errorTitle, .oups, .error_return {
+    color: #FF6060;
+}
+
+.errorTitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
+    margin : 0;
+
+}
+
+.oups{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    margin-bottom : 250px;
+}
+
