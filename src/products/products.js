@@ -5,6 +5,7 @@ import './products.css';
 import { useParams, useNavigate } from 'react-router-dom';
 import Slider from '../components/slider/slider';
 import Rating from '../components/rating/rating';
+import Collapsible from '../components/collaps/collaps';
 
 import Locations from "../data.json";
 
@@ -60,20 +61,13 @@ const Product = () => {
                   </div>
 
                   <div className="Box">
-                    <details className="description">
-                      <summary>Description</summary>
-                        <p className='fullDescription'>{location.description}</p>
-                    </details>
-                    <details className="equipements">
-                      <summary>Equipements</summary>
-                      <ul className='equipmentList'>
+                    <Collapsible title={"description"} content={location.description} />
+                    <Collapsible title={"Équipements"} content={<ul className='equipmentList'>
                       {
                         location.equipments.map(equipment => <li className='item'>{equipment}</li>)
                       }
                        
-                      </ul>
-                       
-                    </details>
+                      </ul>} />
                   </div>
           
                   <Footer />
