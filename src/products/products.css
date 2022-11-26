@@ -133,9 +133,33 @@ margin-right : 15px;
 @media screen and (max-width : 768px) {
     .Box {
         flex-direction: column;
+        width : 100%;
     }
 
     .locationTags {
         font-size : 12px;
+    }
+
+    .diapo {
+        height : 255px;
+    }
+}
+@media screen and (max-width : 450px) {
+    .locationMoreInfo {
+        flex-direction : column;
+        align-items: flex-start;
+    }
+    .hostInfo {
+        flex-direction: row-reverse;
+    }
+    .hostName {
+        text-align: left;
+        padding-left : 5%;
+    }
+    .rating {
+        align-self: flex-start;
+    }
+    .locationinfo h1 {
+        font-size: 18px;
     }
 }
