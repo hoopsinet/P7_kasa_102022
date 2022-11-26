@@ -5,6 +5,7 @@
 .error_return{
     font-size: 18px;
     text-align: center;
+    display: block;
 }
 
 .errorTitle {

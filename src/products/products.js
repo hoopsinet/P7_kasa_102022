@@ -74,7 +74,7 @@ const Product = () => {
                   </div>  
                   <Footer />
                 </div>
-            ))};
+            ))}
         </div>
       </div>
     ) 

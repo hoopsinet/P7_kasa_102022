@@ -18,31 +18,43 @@
 }
 
 .location_cover {
+    border-radius : 10px;
     width : 100%;
-    min-height : 255px;
+    height : 80%;
     object-fit : cover;
-    border-top-left-radius : 10px;
-    border-top-right-radius: 10px;
 }
 
 .location_card h2 {
     height : 20%;
-    font-size : 18px;
-    line-height : 25.67px;
-    text-align : left;
-    margin : 5%;
+    margin :0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
     color : white;
-    font-weight : 500;
-    margin : 0 5%;
-
+    text-align : left;
+    padding-left : 5%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 831px) {
+    .location_card {
+        width : 20%;
+        min-width : 250px;
+        min-height : 250px;
+        height : auto;
+    }
+
+    .location_card h2 {
+        font-size : 16px;
+    }
+}
+
+@media screen and (max-width: 630px) {
     .location_card {
         width : 100%;
+        max-height : 300px;
         margin-left : 0;
-        margin-right : 0;
-        min-width: 100%;
+        margin-right: 0;
+        margin-bottom : 0;
     }
 }
 

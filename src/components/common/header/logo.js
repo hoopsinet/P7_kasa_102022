@@ -8,9 +8,9 @@ export default function logo_kasa() {
   return (
     <div className="logo">
       <img src={k_pink} alt="lettre k logo" />
-      <img src={home_pink} alt="lettre home logo" />
-      <img src={s_pink} alt="lettre s logo" />
-      <img src={a_pink} alt="lettre a logo" />
+      <img src={home_pink} alt="lettre home logo" className="letter"/>
+      <img src={s_pink} alt="lettre s logo" className="letter"/>
+      <img src={a_pink} alt="lettre a logo" className="letter"/>
     </div>
   );
 }

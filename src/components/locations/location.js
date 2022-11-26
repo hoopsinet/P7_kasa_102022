@@ -15,5 +15,4 @@ export default function location() {
                 </Link>
             </div>
         )
-
-        })}
+})}

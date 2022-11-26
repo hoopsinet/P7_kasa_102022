@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import arrowbot from '../../img/arrowbot.png'
+import arrowtop from '../../img/arrowtop.png'
 import './collaps.css';
 
 export default function Collapsible({content, title}) {
@@ -8,6 +10,7 @@ export default function Collapsible({content, title}) {
         <div className={title}>
             <button className="pushdown" onClick={() => setIsOpen(!isOpen)}>
                 {title}
+                <span>{isOpen ? <img src={arrowtop} alt="" /> : <img src={arrowbot} />}</span>
             </button>
             {isOpen && <div className="content">{content}</div>}
         </div>

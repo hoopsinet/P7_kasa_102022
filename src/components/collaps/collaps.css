@@ -4,8 +4,11 @@
     border-radius : 10px;
     background-color : #fe6262;
     color : white;
-    padding : 5px;
+    padding : 5%;
     text-align : left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .Description, .Équipements{
@@ -24,8 +27,8 @@
 }
 
 @media screen and (max-width : 768px) {
-    .collapsible {
-        width : 100%;
-        margin-bottom : 50px;
-    }
+.Description, .Équipements {
+    width : 100%;
+    margin-bottom : 5%;
+}
 }
