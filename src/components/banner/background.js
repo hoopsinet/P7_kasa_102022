@@ -6,7 +6,10 @@ export default function banniere() {
   return (
     <div className="banniere">
       <img src={banniere_background} alt="banniere" className="banniere_img" />
-      <p className="banniere_text">Chez vous, partout et ailleurs</p>
+      <div className="banniere_text">
+        <p>Chez vous,</p> 
+        <p>partout et ailleurs</p>
+        </div>
     </div>
   );
 }

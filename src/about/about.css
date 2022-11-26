@@ -3,24 +3,12 @@
     margin : auto;
     
 }
-
-details {
-    margin : 25px 0;
-    border-radius : 5px;
+.Fiabilité, .Respect, .Service, .Securité{
+margin-top: 3%;
 }
 
-summary {
-    border-radius : 5px;
-}
-
-details>p {
-    text-align: left;
-    color : #fe6262;
-    padding : 20px 15px;
-    line-height: 25.67px;
-}
-
-
-@media all and (max-width:630px) {
-
+@media all and (max-width:768px) {
+    .aboutContent {
+        width : 100%;
+    }
 }

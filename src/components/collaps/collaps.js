@@ -5,7 +5,7 @@ export default function Collapsible({content, title}) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="collapsible">
+        <div className={title}>
             <button className="pushdown" onClick={() => setIsOpen(!isOpen)}>
                 {title}
             </button>

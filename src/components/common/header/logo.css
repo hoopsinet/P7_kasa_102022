@@ -1,5 +1,17 @@
-.logo {
-    height: 68px;
-    width: 18%;
-    margin-left: 5%;
+@media screen and (max-width: 768px) {
+    .logo {
+        margin-left : 0;
+        max-width : 50%;
+    }
+
+    .logo img {
+        max-width: 25%;
+        padding-left : 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+    max-width: 40%;
+    }
 }
