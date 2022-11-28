@@ -1,9 +1,10 @@
 import React from 'react';
-import "./error.css";
-import '../common.css';
+import "../about/about.css";
+import '../../common.css';
 import { Link } from "react-router-dom";
-import Header from '../components/common/header/header';
-import Footer from '../components/common/footer/footer';
+import Header from '../../components/common/header/header';
+import Footer from "../../components/common/footer/footer";
+
 
 export default function Error() {
   return (

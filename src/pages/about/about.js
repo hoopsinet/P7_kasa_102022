@@ -1,10 +1,10 @@
 import React from "react";
-import BanniereAbout from "../components/banner/bannerAbout";
-import Header from "../components/common/header/header";
-import Footer from "../components/common/footer/footer";
-import "./about.css";
-import "../common.css";
-import Collapsible from "../components/collaps/collaps";
+import BanniereAbout from "../../components/banner/bannerAbout";
+import Header from "../../components/common/header/header";
+import Footer from "../../components/common/footer/footer";
+import "../about/about.css";
+import "../../common.css";
+import Collapsible from "../../components/collaps/collaps";
 
 export default function About() {
   return (

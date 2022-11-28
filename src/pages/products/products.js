@@ -1,14 +1,14 @@
 import React, { useEffect }  from 'react';
-import Header from '../components/common/header/header';
-import Footer from '../components/common/footer/footer';
-import './products.css';
-import'../common.css';
+import Header from '../../components/common/header/header';
+import Footer from '../../components/common/footer/footer';
+import '../products/products.css';
+import'../../common.css';
 import { useParams, useNavigate } from 'react-router-dom';
-import Slider from '../components/slider/slider';
-import Rating from '../components/rating/rating';
-import Collapsible from '../components/collaps/collaps';
+import Slider from '../../components/slider/slider';
+import Rating from '../../components/rating/rating';
+import Collapsible from '../../components/collaps/collaps';
 
-import Locations from "../data.json";
+import Locations from "../../data.json";
 
 const Product = () => {
 

@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../components/common/header/header";
-import Banniere from "../components/banner/background";
-import locations from "../data.json";
-import Location from "../components/locations/location";
-import Footer from "../components/common/footer/footer";
+import Header from "../../components/common/header/header";
+import Banniere from "../../components/banner/background";
+import locations from "../../data.json";
+import Location from "../../components/locations/location";
+import Footer from "../../components/common/footer/footer";
 import "./home.css";
-import "../common.css";
+import "../../common.css";
 
 export default function Home() {
   console.log(locations);
