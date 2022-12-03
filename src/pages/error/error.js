@@ -1,5 +1,5 @@
 import React from 'react';
-import "../about/about.css";
+import '../error/error.css'
 import '../../common.css';
 import { Link } from "react-router-dom";
 import Header from '../../components/common/header/header';
