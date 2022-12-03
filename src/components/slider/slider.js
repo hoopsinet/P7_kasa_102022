@@ -18,8 +18,10 @@ const Slider = ({slides}) => {
         setCurrentIndex(newIndex)
     }
 
+    if (slides.length > 1) {
         return(
             <div className="boxStyle">
+                
                 <button className="leftBtn" onClick={prevSlide}>
                     <img src={ LeftArrow } alt="" className="" />
                 </button>
@@ -31,6 +33,16 @@ const Slider = ({slides}) => {
                 </div>
             </div>
         ) 
+    } else {
+        return(
+            <div className="boxStyle">
+                <div className="pictureNbr">{currentIndex +1 }/{slides.length}</div>
+                <div className="slider" style={{backgroundImage : `url(${slides[currentIndex]})`}}>
+                </div>
+            </div>
+        ) 
+    }
+        
 }
 
 
