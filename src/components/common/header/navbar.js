@@ -1,5 +1,5 @@
-import "./navbar.css";
-import Logo from "./logo";
+import "./Navbar.css";
+import Logo from "./Logo";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {

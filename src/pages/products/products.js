@@ -1,12 +1,12 @@
 import React, { useEffect }  from 'react';
-import Header from '../../components/common/header/header';
-import Footer from '../../components/common/footer/footer';
-import '../products/products.css';
-import'../../common.css';
+import Header from '../../components/common/header/Header';
+import Footer from '../../components/common/footer/Footer';
+import '../products/Products.css';
+import'../../Common.css';
 import { useParams, useNavigate } from 'react-router-dom';
-import Slider from '../../components/slider/slider';
-import Rating from '../../components/rating/rating';
-import Collapsible from '../../components/collaps/collaps';
+import Slider from '../../components/slider/Slider';
+import Rating from '../../components/rating/Rating';
+import Collapsible from '../../components/collaps/Collaps';
 
 import Locations from "../../data.json";
 
@@ -22,6 +22,7 @@ const Product = () => {
       }
     });
     
+
      return (
 
       <div className="">

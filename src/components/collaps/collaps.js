@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import arrowbot from "../../img/arrowbot.png";
 import arrowtop from "../../img/arrowtop.png";
-import "./collaps.css";
+import "./Collaps.css";
 
 export default function Collapsible({ content, title }) {
   const [isOpen, setIsOpen] = useState(false);

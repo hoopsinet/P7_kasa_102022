@@ -1,9 +1,9 @@
 import React from "react";
-import "./location.css";
+import "./Location.css";
 import locations from '../../data.json';
 import { Link } from "react-router-dom";
 
-export default function location() {
+export default function Location() {
        return locations.map ((location) => {
         console.log(location.id);
 

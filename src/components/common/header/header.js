@@ -1,7 +1,7 @@
-import Navbar from './navbar';
-import "./header.css"
+import Navbar from './Navbar';
+import "./Header.css"
 
-export default function header() {
+export default function Header() {
     return (
         <Navbar />
     )

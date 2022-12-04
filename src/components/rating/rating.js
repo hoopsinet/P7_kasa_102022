@@ -1,7 +1,7 @@
 import React from "react"
 import starFull from "../../img/starFull.png"
 import star from "../../img/star.png"
-import './rating.css';
+import './Rating.css';
 
 export default function Rating(rate) {
 const range = [1, 2, 3, 4, 5];

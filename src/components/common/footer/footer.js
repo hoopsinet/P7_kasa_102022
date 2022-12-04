@@ -1,10 +1,10 @@
-import "./footer.css";
+import "./Footer.css";
 import k from "../../../../src/img/k.png";
 import home from "../../../../src/img/home.png";
 import s from "../../../../src/img/s.png";
 import a from "../../../../src/img/a.png";
 
-export default function footer() {
+export default function Footer() {
   return (
     <div className="main_footer">
       <div className="logo_footer">

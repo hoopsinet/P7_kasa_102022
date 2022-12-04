@@ -21,16 +21,12 @@ nav {
     padding : 0;
 }
 
-.items {
-    color: #FF6060;
-}
-
 .items a {
     text-decoration : none;
     color: #FF6060;
 }
 
-.items a:active, .items a:hover {
+.items a:hover {
     text-decoration: underline;
 }
 

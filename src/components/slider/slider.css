@@ -22,6 +22,7 @@ button {
 
 button img {
     max-height : 100%;
+    cursor: pointer;
 }
 
 .leftBtn {

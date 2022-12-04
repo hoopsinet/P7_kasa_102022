@@ -1,17 +1,18 @@
 import React from "react";
-import BanniereAbout from "../../components/banner/bannerAbout";
-import Header from "../../components/common/header/header";
-import Footer from "../../components/common/footer/footer";
-import "../about/about.css";
-import "../../common.css";
-import Collapsible from "../../components/collaps/collaps";
+import Banniere from "../../components/banner/Banner";
+import Header from "../../components/common/header/Header";
+import Footer from "../../components/common/footer/Footer";
+import banniere_about from "../../img/aboutImg.png";
+import "../about/About.css";
+import "../../Common.css";
+import Collapsible from "../../components/collaps/Collaps";
 
 export default function About() {
   return (
     <div>
       <div className="main_container">
         <Header />
-        <BanniereAbout />
+        <Banniere picture={banniere_about} />
         <div className="aboutContent">
           <Collapsible
             title={"Fiabilité"}
