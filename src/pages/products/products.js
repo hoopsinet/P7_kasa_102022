@@ -14,9 +14,9 @@ const Product = () => {
 
     const params = useParams();
     const navigation = useNavigate();
-
+    
     useEffect(() => {
-      let location = Locations.find((location) => params.id === location.id);
+      let location = Locations.find((location) => params.id === location.id) ;
       if (!location) {
          navigation("/error");
       }
@@ -25,11 +25,11 @@ const Product = () => {
 
      return (
 
-      <div className="">
+      <div className=""> 
         <div className="">
             {Locations.filter((location) => location.id === params.id).map(
-              (location) => (
-                <div className="">
+              (location, index) => (
+                <div className="" key={location.id}>
                   <div className='main_container'>
                     <Header />
                 
@@ -46,7 +46,7 @@ const Product = () => {
 
                         <div className='locationTags'>
                         {
-                            location.tags.map(tag => <p className='locationTag'>{tag}</p>)
+                            location.tags.map(tag => <p className='locationTag' key={tag} >{tag}</p>)
                           }
                         </div>
                       </div>
@@ -63,12 +63,12 @@ const Product = () => {
                       </div>
                     </div>
 
-                    <div className="Box">
+                    <div className="Box" >
                       <Collapsible title={"Description"} content={location.description} />
                       <Collapsible title={"Équipements"} content={
                         <ul className='equipmentList'>
                         {
-                          location.equipments.map(equipment => <li className='item'>{equipment}</li>)
+                          location.equipments.map(equipment => <li className='item' key={equipment}>{equipment}</li>)
                         }
                         </ul>} />
                     </div>

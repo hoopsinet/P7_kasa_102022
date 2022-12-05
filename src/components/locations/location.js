@@ -8,10 +8,11 @@ export default function Location() {
         console.log(location.id);
 
         return (
-            <div className="location_card">
-                <Link to={`/products/${location.id}`} >
+            <div className="location_card" key={location.id}>
+                <Link to={`/products/${location.id}`}  >
                     <img src={ location.cover } alt="location_photo" className="location_cover"/>
                     <h2>{ location.title }</h2>
+                   
                 </Link>
             </div>
         )
