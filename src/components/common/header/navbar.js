@@ -13,7 +13,7 @@ export default function Navbar() {
           <Link to="/" className={underline === '/' ? 'active' : ''}>Accueil </Link>
         </li>
         <li className="items">
-          <Link to="/about"className={underline === '/about'? 'active' : ''} >A propos</Link>
+          <Link to="/about"className={underline === '/about' ? 'active' : ''} >A propos</Link>
         </li>
       </ul>
     </nav>
